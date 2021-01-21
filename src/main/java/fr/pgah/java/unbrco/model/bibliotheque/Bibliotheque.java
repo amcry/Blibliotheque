@@ -133,10 +133,12 @@ public class Bibliotheque {
   // EFFETS : enregistre le fait que livre est maintenant emprunté (si possible)
   // RENVOIE : vrai si l'opération est un succès
   public boolean enregistrerSortie(Livre livre) {
-    // if (livre.estSorti()==) {
-
-    // }
-    // return false;
+    if (livre != null) {
+      if (livre.estSorti() == true) {
+        return false;
+      }
+    }
+    return false;
   }
 
   // PREREQUIS : livre != null
